@@ -8,6 +8,6 @@ package dbcontext;
 public interface DatabaseInfor {
     public static String driverName="com.microsoft.sqlserver.jdbc.SQLServerDriver";
     public static String url="jdbc:sqlserver://127.0.0.1:1433;databaseName=LoginShoppingCart;";
-    public static String user="quanphung";
-    public static String pass="quan123";
+    public static String user="sa";
+    public static String pass="vanson123";
 }
