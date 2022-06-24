@@ -3,8 +3,15 @@
     Created on : Jun 24, 2022, 2:09:35 PM
     Author     : phung
 --%>
-
+<%@page import="cn.techtutorial.model.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+    User auth = (User) request.getSession().getAttribute("auth");
+    if (auth != null) {
+        response.sendRedirect("index.jsp");
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>

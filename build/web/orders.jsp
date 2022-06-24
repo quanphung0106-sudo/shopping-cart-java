@@ -4,7 +4,15 @@
     Author     : phung
 --%>
 
+<%@page import="cn.techtutorial.connection.DbCon"%>
+<%@page import="cn.techtutorial.model.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    User auth = (User) request.getSession().getAttribute("auth");
+    if (auth != null) {
+        request.setAttribute("auth", auth);
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>
